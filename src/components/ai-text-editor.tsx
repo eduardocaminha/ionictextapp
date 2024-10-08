@@ -204,10 +204,10 @@ export function AiTextEditor() {
             </CardHeader>
             <CardContent>
               {aiResponse.errors.orthographic + aiResponse.errors.conceptual === 0 ? (
-                <Alert variant="success" className="bg-green-50 dark:bg-green-900">
-                  <CheckCircle className="h-4 w-4" />
-                  <AlertTitle>Excelente!</AlertTitle>
-                  <AlertDescription>
+                <Alert variant="default" className="bg-green-50 dark:bg-green-900 border-green-500">
+                  <CheckCircle className="h-4 w-4 text-green-500" />
+                  <AlertTitle className="text-green-700 dark:text-green-300">Excelente!</AlertTitle>
+                  <AlertDescription className="text-green-600 dark:text-green-200">
                     Não foram encontrados erros ortográficos ou problemas conceituais no texto.
                   </AlertDescription>
                 </Alert>
